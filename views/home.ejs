@@ -1,0 +1,19 @@
+<%- include('../views/partials/header') %>
+
+<h1>Home</h1>
+
+<div class="mb-5">
+  <br />
+
+  <% blogPostList.forEach(function(blogPosts){ %>
+  <article class="blog-post">
+    <h4 class="pb-4 mb-4 fst-italic "><%=blogPosts.blogPostTitle%></h4>
+    <p class="blog-post-meta text-justify"><%=blogPosts.blogPostDescription.substring(0,100) + " ... "%> <a href="/posts/:<%=blogPosts.blogPostTitle%>">Read more.</a> </p>
+  </article>
+  <br />
+  <%});%>
+
+  </div>
+
+
+<%- include('../views/partials/footer') %>
