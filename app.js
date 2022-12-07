@@ -22,7 +22,7 @@ app.use(express.static("public"));
 //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 //mongoose
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://admin-thisal:Ch%40nG31T@cluster0.rtoqjvk.mongodb.net/blogPostDB', {useNewUrlParser:true});
+mongoose.connect('connect url', {useNewUrlParser:true});
 
 const {
   Schema
